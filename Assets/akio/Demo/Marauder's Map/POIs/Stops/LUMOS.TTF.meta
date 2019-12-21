@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 061a41d1efad544b297e7a1d4989d6bc
+timeCreated: 1512578476
+licenseType: Store
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Lumos
+  fontNames:
+  - Lumos
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

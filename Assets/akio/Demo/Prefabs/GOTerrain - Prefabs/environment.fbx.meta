@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: b0cb4c10f917c4006b15463e1eb849b7
+timeCreated: 1487876871
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Apple
+    100002: Cloud_1
+    100004: Cloud_2
+    100006: Cloud_3
+    100008: //RootNode
+    100010: Grass
+    100012: Grave
+    100014: SketchUp
+    100016: SketchUp.001
+    100018: SketchUp.002
+    100020: SketchUp.003
+    100022: Tree_1
+    100024: Tree_2
+    100026: Tree_3a
+    100028: Tree_3b
+    100030: Tree_3c
+    100032: Tree_4a
+    100034: Tree_4b
+    100036: Tree_balloon
+    100038: Rock_1
+    100040: Rock_2
+    100042: Rock_3
+    100044: Rock_4
+    100046: Bench
+    100048: Table
+    100050: Bridge
+    400000: Apple
+    400002: Cloud_1
+    400004: Cloud_2
+    400006: Cloud_3
+    400008: //RootNode
+    400010: Grass
+    400012: Grave
+    400014: SketchUp
+    400016: SketchUp.001
+    400018: SketchUp.002
+    400020: SketchUp.003
+    400022: Tree_1
+    400024: Tree_2
+    400026: Tree_3a
+    400028: Tree_3b
+    400030: Tree_3c
+    400032: Tree_4a
+    400034: Tree_4b
+    400036: Tree_balloon
+    400038: Rock_1
+    400040: Rock_2
+    400042: Rock_3
+    400044: Rock_4
+    400046: Bench
+    400048: Table
+    400050: Bridge
+    2300000: Apple
+    2300002: Cloud_1
+    2300004: Cloud_2
+    2300006: Cloud_3
+    2300008: Grass
+    2300010: Grave
+    2300012: SketchUp
+    2300014: SketchUp.001
+    2300016: SketchUp.002
+    2300018: SketchUp.003
+    2300020: Tree_1
+    2300022: Tree_2
+    2300024: Tree_3a
+    2300026: Tree_3b
+    2300028: Tree_3c
+    2300030: Tree_4a
+    2300032: Tree_4b
+    2300034: Tree_balloon
+    2300036: Rock_1
+    2300038: Rock_2
+    2300040: Rock_3
+    2300042: Rock_4
+    2300044: Bench
+    2300046: Table
+    2300048: Bridge
+    3300000: Apple
+    3300002: Cloud_1
+    3300004: Cloud_2
+    3300006: Cloud_3
+    3300008: Grass
+    3300010: Grave
+    3300012: SketchUp
+    3300014: SketchUp.001
+    3300016: SketchUp.002
+    3300018: SketchUp.003
+    3300020: Tree_1
+    3300022: Tree_2
+    3300024: Tree_3a
+    3300026: Tree_3b
+    3300028: Tree_3c
+    3300030: Tree_4a
+    3300032: Tree_4b
+    3300034: Tree_balloon
+    3300036: Rock_1
+    3300038: Rock_2
+    3300040: Rock_3
+    3300042: Rock_4
+    3300044: Bench
+    3300046: Table
+    3300048: Bridge
+    4300000: SketchUp.003
+    4300002: SketchUp.002
+    4300004: SketchUp.001
+    4300006: SketchUp
+    4300008: Cloud_3
+    4300010: Cloud_2
+    4300012: Cloud_1
+    4300014: Grave
+    4300016: Apple
+    4300018: Tree_4a
+    4300020: Tree_4b
+    4300022: Tree_3a
+    4300024: Tree_1
+    4300026: Tree_2
+    4300028: Tree_balloon
+    4300030: Tree_3b
+    4300032: Tree_3c
+    4300034: Grass
+    4300036: Rock_4
+    4300038: Rock_3
+    4300040: Rock_2
+    4300042: Rock_1
+    4300044: Table
+    4300046: Bench
+    4300048: Bridge
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 10
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

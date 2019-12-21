@@ -1,0 +1,317 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1286275902824666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4548441121939462}
+  - component: {fileID: 114271666167841522}
+  - component: {fileID: 114033692760699398}
+  m_Layer: 0
+  m_Name: Map - Wireframe theme
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4548441121939462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286275902824666}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114271666167841522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286275902824666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d2e3a95dab0a4efcab4bd5d59167548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locationManager: {fileID: 0}
+  tileBuffer: 1
+  zoomLevel: 16
+  useCache: 1
+  clearCache: 0
+  openCache: 0
+  mapbox_accessToken: pk.eyJ1IjoiYWxhbmdyYW50IiwiYSI6ImNpdHdtMXEwdTAwMXozbms5NzBoOGh4djcifQ.SONpcZWMGNpaFk9tCsupaQ
+  osm_api_key: 
+  mapzen_legacy_api_key: 
+  mapType: 0
+  tileBackground: {fileID: 2100000, guid: 3fa08972433384c0f98009274422b268, type: 2}
+  tempTileBackgorund: {fileID: 0}
+  layers:
+  - layerType: 0
+    isPolygon: 1
+    uvMappingStyle: 3
+    useRealHeight: 1
+    forceMinHeight: 1
+    slicedExtrusion: 1
+    defaultRendering:
+      kind: 0
+      material: {fileID: 2100000, guid: a3ad8e5612b554a7aaa6266e9c71c942, type: 2}
+      outlineMaterial: {fileID: 0}
+      hasRoof: 1
+      roofMaterial: {fileID: 2100000, guid: 5d70acfc3288243a5bcddd20563ae3d7, type: 2}
+      materials: []
+      lineWidth: 0
+      outlineWidth: 0
+      polygonHeight: 30
+      tag: 
+    renderingOptions: []
+    useOnly: 
+    avoid: 
+    useTunnels: 1
+    useBridges: 1
+    useColliders: 0
+    colliderHeight: 0
+    unityLayer: 0
+    castShadows: 1
+    startInactive: 0
+    disabled: 0
+    OnFeatureLoad:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: GoMap.GOFeatureEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - layerType: 1
+    isPolygon: 1
+    uvMappingStyle: 1
+    useRealHeight: 0
+    forceMinHeight: 0
+    slicedExtrusion: 1
+    defaultRendering:
+      kind: 0
+      material: {fileID: 2100000, guid: 95c6fb74cde1d40ba8d68fbe01c1fcfa, type: 2}
+      outlineMaterial: {fileID: 0}
+      hasRoof: 0
+      roofMaterial: {fileID: 0}
+      materials: []
+      lineWidth: 0
+      outlineWidth: 0
+      polygonHeight: 0
+      tag: 
+    renderingOptions: []
+    useOnly: 
+    avoid: 
+    useTunnels: 1
+    useBridges: 1
+    useColliders: 1
+    colliderHeight: 0
+    unityLayer: 0
+    castShadows: 0
+    startInactive: 0
+    disabled: 0
+    OnFeatureLoad:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: GoMap.GOFeatureEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - layerType: 2
+    isPolygon: 1
+    uvMappingStyle: 0
+    useRealHeight: 0
+    forceMinHeight: 0
+    slicedExtrusion: 1
+    defaultRendering:
+      kind: 0
+      material: {fileID: 2100000, guid: 505db24e1420c43a1a61cd0dc1994495, type: 2}
+      outlineMaterial: {fileID: 0}
+      hasRoof: 0
+      roofMaterial: {fileID: 0}
+      materials: []
+      lineWidth: 0
+      outlineWidth: 0
+      polygonHeight: 0
+      tag: 
+    renderingOptions: []
+    useOnly: 
+    avoid: 
+    useTunnels: 1
+    useBridges: 1
+    useColliders: 1
+    colliderHeight: 0
+    unityLayer: 4
+    castShadows: 0
+    startInactive: 0
+    disabled: 0
+    OnFeatureLoad:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: GoMap.GOFeatureEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - layerType: 4
+    isPolygon: 0
+    uvMappingStyle: 0
+    useRealHeight: 0
+    forceMinHeight: 0
+    slicedExtrusion: 1
+    defaultRendering:
+      kind: 0
+      material: {fileID: 2100000, guid: 87339874579f04026a8b1f6b51ab8567, type: 2}
+      outlineMaterial: {fileID: 2100000, guid: 6e2faf247860545158893353d2e10063, type: 2}
+      hasRoof: 0
+      roofMaterial: {fileID: 0}
+      materials: []
+      lineWidth: 3
+      outlineWidth: 1
+      polygonHeight: 0
+      tag: 
+    renderingOptions:
+    - kind: 238
+      material: {fileID: 2100000, guid: 87339874579f04026a8b1f6b51ab8567, type: 2}
+      outlineMaterial: {fileID: 2100000, guid: 6e2faf247860545158893353d2e10063, type: 2}
+      hasRoof: 0
+      roofMaterial: {fileID: 0}
+      materials: []
+      lineWidth: 5
+      outlineWidth: 1
+      polygonHeight: 0
+      tag: 
+    - kind: 239
+      material: {fileID: 2100000, guid: 87339874579f04026a8b1f6b51ab8567, type: 2}
+      outlineMaterial: {fileID: 2100000, guid: 6e2faf247860545158893353d2e10063, type: 2}
+      hasRoof: 0
+      roofMaterial: {fileID: 0}
+      materials: []
+      lineWidth: 4
+      outlineWidth: 2
+      polygonHeight: 0
+      tag: 
+    - kind: 240
+      material: {fileID: 2100000, guid: 87339874579f04026a8b1f6b51ab8567, type: 2}
+      outlineMaterial: {fileID: 2100000, guid: 6e2faf247860545158893353d2e10063, type: 2}
+      hasRoof: 0
+      roofMaterial: {fileID: 0}
+      materials: []
+      lineWidth: 4
+      outlineWidth: 2
+      polygonHeight: 0
+      tag: 
+    - kind: 241
+      material: {fileID: 2100000, guid: 20af7a35b7c7b4695bceeb2c9bb6a36d, type: 2}
+      outlineMaterial: {fileID: 0}
+      hasRoof: 0
+      roofMaterial: {fileID: 0}
+      materials: []
+      lineWidth: 1
+      outlineWidth: 0
+      polygonHeight: 0
+      tag: 
+    - kind: 242
+      material: {fileID: 2100000, guid: 237c9b8e80e9646199fc4fa0bc6984d8, type: 2}
+      outlineMaterial: {fileID: 0}
+      hasRoof: 0
+      roofMaterial: {fileID: 0}
+      materials: []
+      lineWidth: 2
+      outlineWidth: 0
+      polygonHeight: 0
+      tag: 
+    useOnly: 
+    avoid: f3000000
+    useTunnels: 0
+    useBridges: 1
+    useColliders: 0
+    colliderHeight: 0
+    unityLayer: 0
+    castShadows: 0
+    startInactive: 0
+    disabled: 0
+    OnFeatureLoad:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: GoMap.GOFeatureEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  pois:
+    unityLayer: 0
+    renderingOptions: []
+    startInactive: 0
+    disabled: 0
+  labels:
+    unityLayer: 0
+    tag: 
+    streetNames:
+      textShader: {fileID: 0}
+      streetNameFont: {fileID: 0}
+      streetnameColor: {r: 0.23921569, g: 0.23921569, b: 0.3254902, a: 1}
+      fontSize: 15
+      minFontSize: 12
+      characterSize: 1
+      fontStyle: 1
+    preferredLanguage: 0
+    startInactive: 0
+    disabled: 1
+    OnLabelLoad:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: GoMap.GOFeatureEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  useElevation: 0
+  elevationMultiplier: 1.5
+  terrainResolution: 50
+  runOnMainThread: 0
+  combineFeatures: 0
+  addGoFeatureComponents: 1
+  useSatelliteBackground: 0
+  satellite4X: 0
+  navmeshSettings:
+    buildNavmeshSurfaces: 0
+    AgentTypeIndex: 0
+    CollectObjects: 0
+    IncludeLayers:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    m_UseGeometry: 0
+    useNavmeshLinks: 0
+  dynamicLoad: 1
+  OnTileLoad:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: SpawnBallons
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+    m_TypeName: GoMap.GOTileEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  tiles: []
+--- !u!114 &114033692760699398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286275902824666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62db0f303b541403292cf21c91b5bc42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  location:
+    latitude: 0
+    longitude: 0
+    altitude: 0
+    timestampLastUpdate: 0
