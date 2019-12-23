@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.32
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0.32}
+  m_IndirectSpecularColor: {r: 0.15530097, g: 0.5188409, b: 0.7473591, a: 0.32}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -825,8 +825,8 @@ MonoBehaviour:
     altitude: 0
     timestampLastUpdate: 1497247771.021966
   worldOrigin:
-    latitude: 0
-    longitude: 0
+    latitude: 39.054326
+    longitude: 125.740095
     altitude: 0
     timestampLastUpdate: 0
   onOriginSet:
@@ -847,7 +847,7 @@ MonoBehaviour:
   lastLocations: []
   currentMotionState: 0
   useLocationServices: 1
-  demoLocation: 4
+  demoLocation: 14
   updateDistance: 0.1
   simulateMotion: 2
   useWsadInEditor: 1
@@ -1110,6 +1110,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11488058, guid: 0fe9e9159bbc2433f9f3220f290fa596, type: 3}
+      propertyPath: locationManager
+      value: 
+      objectReference: {fileID: 675609286}
+    - target: {fileID: 11488058, guid: 0fe9e9159bbc2433f9f3220f290fa596, type: 3}
+      propertyPath: mapbox_accessToken
+      value: pk.eyJ1Ijoid3Vyc3kiLCJhIjoiY2s0OW03NzEwMDY0NjNqcG83YWRuOTI0byJ9.6CR8yIzJhVLYwqCka-fymw
+      objectReference: {fileID: 0}
     - target: {fileID: 462320, guid: 0fe9e9159bbc2433f9f3220f290fa596, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1141,14 +1149,6 @@ PrefabInstance:
     - target: {fileID: 462320, guid: 0fe9e9159bbc2433f9f3220f290fa596, type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11488058, guid: 0fe9e9159bbc2433f9f3220f290fa596, type: 3}
-      propertyPath: locationManager
-      value: 
-      objectReference: {fileID: 675609286}
-    - target: {fileID: 11488058, guid: 0fe9e9159bbc2433f9f3220f290fa596, type: 3}
-      propertyPath: mapbox_accessToken
-      value: pk.eyJ1Ijoid3Vyc3kiLCJhIjoiY2s0OW03NzEwMDY0NjNqcG83YWRuOTI0byJ9.6CR8yIzJhVLYwqCka-fymw
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fe9e9159bbc2433f9f3220f290fa596, type: 3}

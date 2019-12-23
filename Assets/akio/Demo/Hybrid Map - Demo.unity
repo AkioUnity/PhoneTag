@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.5878589, g: 0.68590456, b: 0.73803365, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -624,13 +624,13 @@ MonoBehaviour:
   worldScale: 1
   desiredAccuracy: 70
   currentLocation:
-    latitude: 41.910509366663945
-    longitude: 12.476284503936768
+    latitude: 39.054326
+    longitude: 125.740095
     altitude: 0
     timestampLastUpdate: 1510711642.553743
   worldOrigin:
-    latitude: 0
-    longitude: 0
+    latitude: 39.054326
+    longitude: 125.740095
     altitude: 0
     timestampLastUpdate: 0
   onOriginSet:
@@ -651,7 +651,7 @@ MonoBehaviour:
   lastLocations: []
   currentMotionState: 0
   useLocationServices: 1
-  demoLocation: 4
+  demoLocation: 14
   updateDistance: 0.1
   simulateMotion: 2
   useWsadInEditor: 1
