@@ -36,8 +36,14 @@ namespace GoShared {
 		GOClipPlane clipPlane;
 
         public bool rotateWithHeading = false;
+        static public GOOrbit Inst;
 
-		// Use this for initialization
+        private void Awake()
+        {
+	        Inst = this;
+        }
+
+        // Use this for initialization
 		void Start () 
 		{
 

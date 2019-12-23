@@ -121,6 +121,14 @@ public class PunController : MonoBehaviourPunCallbacks
                 Debug.Log("else" + info);
             }
         }
+        if (!PhotonNetwork.InLobby)
+        {
+            PhotonNetwork.JoinLobby();
+        }
+        else
+        {
+            CreateOrJoinRoom(0);
+        }
     }
 
     #region PUN CALLBACKS
@@ -132,10 +140,6 @@ public class PunController : MonoBehaviourPunCallbacks
         {
             PhotonNetwork.JoinLobby();
         }
-        else
-        {
-            CreateOrJoinRoom(0);
-        }
     }
 
     public override void OnJoinedLobby()
@@ -144,10 +148,6 @@ public class PunController : MonoBehaviourPunCallbacks
         if (!PhotonNetwork.InLobby)
         {
             PhotonNetwork.JoinLobby();
-        }
-        else
-        {
-            CreateOrJoinRoom(0);    
         }
     }
 
