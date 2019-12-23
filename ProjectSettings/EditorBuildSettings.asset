@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/akio/Demo/Tag.unity
+    path: Assets/Scenes/Intro.unity
+    guid: 1b71782ef0f492f47a9fad47350f867e
+  - enabled: 1
+    path: Assets/Scenes/Tag.unity
     guid: 541d4523a501c15429d279032ecbbdb7
   m_configObjects: {}

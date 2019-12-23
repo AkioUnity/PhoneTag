@@ -4,6 +4,7 @@ using GoMap;
 
 using GoShared;
 using System;
+using Photon.Pun;
 using UnityEngine.Events;
 
 
@@ -23,6 +24,8 @@ public class MoveAvatar : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		avatarFigure= PhotonNetwork.Instantiate("Player", new Vector3(0,10.74f,0), Quaternion.identity, 0);
+		avatarFigure.transform.SetParent(this.transform);
 
 		goMap.locationManager.onOriginSet.AddListener((Coordinates) => {OnOriginSet(Coordinates);});
 		goMap.locationManager.onLocationChanged.AddListener((Coordinates) => {OnLocationChanged(Coordinates);});
@@ -50,20 +53,15 @@ public class MoveAvatar : MonoBehaviour {
 	#region Location manager events
 
 	void OnOriginSet (Coordinates currentLocation) {
-
 		//Position
 		Vector3 currentPosition = currentLocation.convertCoordinateToVector (0);
 		if(goMap.useElevation)
 			currentPosition = GOMap.AltitudeToPoint (currentPosition);
-
 		transform.position = currentPosition;
-
 	}
 
 	void OnLocationChanged (Coordinates currentLocation) {
-
 		Vector3 lastPosition = transform.position;
-
 		//Position
 		Vector3 currentPosition = currentLocation.convertCoordinateToVector (0);
 
@@ -73,7 +71,6 @@ public class MoveAvatar : MonoBehaviour {
 		if (lastPosition == Vector3.zero) {
 			lastPosition = currentPosition;
 		}
-			
 		moveAvatar (lastPosition,currentPosition);
 
 	}
@@ -83,10 +80,6 @@ public class MoveAvatar : MonoBehaviour {
 	#region Move Avatar
 
 	void moveAvatar (Vector3 lastPosition, Vector3 currentPosition) {
-
-
-
-
 		StartCoroutine (move (lastPosition,currentPosition,0.5f));
 	}
 
