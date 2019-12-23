@@ -185,26 +185,6 @@ public class PunController : MonoBehaviourPunCallbacks
         
     }
 
-    public override void OnPlayerEnteredRoom(Player newPlayer)
-    {
-
-    }
-
-    public override void OnPlayerLeftRoom(Player otherPlayer)
-    {
-
-    }
-
-    public override void OnMasterClientSwitched(Player newMasterClient)
-    {
-
-    }
-
-    public override void OnPlayerPropertiesUpdate(Player player, Hashtable updatedInfo)
-    {
-     
-    }
-
     public override void OnRoomPropertiesUpdate(Hashtable updatedInfo)
     {
      

@@ -62,9 +62,7 @@ namespace GoShared {
 			//{
 			//	_rigidbody.freezeRotation = true;
 			//}
-
-			updateOrbit (true);
-
+//			updateOrbit (true);
 		}
 
 		void LateUpdate () 
@@ -113,7 +111,7 @@ namespace GoShared {
 					v1 = Input.mousePosition;
 			}
 
-            if (drag || firstLaunch || autoOrbit || rotateWithHeading) {
+            if (drag || firstLaunch || autoOrbit || rotateWithHeading ) {
 
 				Vector3 v2 = Camera.main.WorldToScreenPoint (target.position);
 
