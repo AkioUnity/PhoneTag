@@ -24,10 +24,6 @@ public class MoveAvatar : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		avatarFigure= PhotonNetwork.Instantiate("Player", new Vector3(0,10.74f,0), Quaternion.identity, 0);
-		avatarFigure.transform.SetParent(this.transform);
-		GOOrbit.Inst.target = avatarFigure.transform;
-
 		goMap.locationManager.onOriginSet.AddListener((Coordinates) => {OnOriginSet(Coordinates);});
 		goMap.locationManager.onLocationChanged.AddListener((Coordinates) => {OnLocationChanged(Coordinates);});
 		if (goMap.useElevation)

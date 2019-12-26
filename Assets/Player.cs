@@ -12,12 +12,14 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Material newMat = Resources.Load("GreenMat", typeof(Material)) as Material;
-        if (PhotonNetwork.IsMasterClient)
-            newMat = Resources.Load("RedMat", typeof(Material)) as Material;
+        
+    }
+
+    public void ChangeColor()
+    {
         for (int i = 0; i < parts.Length; i++)
         {
-            parts[i].material = newMat;
-        }
+            parts[i].material = PlayerManager.Inst.GetMaterial(isRed);
+        } 
     }
 }

@@ -285,11 +285,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3742329159415404332}
-  - component: {fileID: 3688406094141270954}
+  - component: {fileID: 2047707624}
   - component: {fileID: 3542904924055034672}
+  - component: {fileID: 3688406094141270954}
   - component: {fileID: 3742329157922171634}
   - component: {fileID: 3742329157922171633}
-  - component: {fileID: 2047707624}
   - component: {fileID: 3544007231578415420}
   m_Layer: 0
   m_Name: Player
@@ -317,22 +317,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -540, z: 0}
---- !u!54 &3688406094141270954
-Rigidbody:
+--- !u!114 &2047707624
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3742329159415526552}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af27c7b1b041fcd4983ef7e332b72ffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parts:
+  - {fileID: 3742329159417737132}
+  - {fileID: 3742329159417787850}
+  - {fileID: 3742329159417781124}
+  - {fileID: 3742329159417768690}
+  isRed: 0
+  isNpc: 0
 --- !u!199 &3542904924055034672
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -396,6 +399,22 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!54 &3688406094141270954
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3742329159415526552}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!114 &3742329157922171634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,25 +452,6 @@ MonoBehaviour:
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &2047707624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3742329159415526552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af27c7b1b041fcd4983ef7e332b72ffd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parts:
-  - {fileID: 3742329159417737132}
-  - {fileID: 3742329159417787850}
-  - {fileID: 3742329159417781124}
-  - {fileID: 3742329159417768690}
-  isRed: 0
-  isNpc: 0
 --- !u!198 &3544007231578415420
 ParticleSystem:
   m_ObjectHideFlags: 0
