@@ -17,8 +17,8 @@ public class PunController : MonoBehaviourPunCallbacks
     static public PunController Inst;
     private TypedLobby _defaultLobby = new TypedLobby("rummyLobby", LobbyType.SqlLobby);
     public Dictionary<string, RoomInfo> cachedRoomList;
-
     private int mTierIdx;
+
 
     public void Awake()
     {
@@ -127,7 +127,7 @@ public class PunController : MonoBehaviourPunCallbacks
         }
         else
         {
-            CreateOrJoinRoom(0);
+            Intro.Inst.CheckStep();
         }
     }
 
