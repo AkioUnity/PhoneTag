@@ -298,6 +298,75 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!1001 &148484877
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4414732081016172731, guid: 7ee73b6022e3d6c4b933887cd944ba2b,
+        type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414732081016172733, guid: 7ee73b6022e3d6c4b933887cd944ba2b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 295.51813
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414732081016172733, guid: 7ee73b6022e3d6c4b933887cd944ba2b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 423.64627
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414732081016172733, guid: 7ee73b6022e3d6c4b933887cd944ba2b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -91.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414732081016172733, guid: 7ee73b6022e3d6c4b933887cd944ba2b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414732081016172733, guid: 7ee73b6022e3d6c4b933887cd944ba2b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414732081016172733, guid: 7ee73b6022e3d6c4b933887cd944ba2b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414732081016172733, guid: 7ee73b6022e3d6c4b933887cd944ba2b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414732081016172733, guid: 7ee73b6022e3d6c4b933887cd944ba2b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414732081016172733, guid: 7ee73b6022e3d6c4b933887cd944ba2b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414732081016172733, guid: 7ee73b6022e3d6c4b933887cd944ba2b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414732081016172733, guid: 7ee73b6022e3d6c4b933887cd944ba2b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ee73b6022e3d6c4b933887cd944ba2b, type: 3}
 --- !u!1 &164233094
 GameObject:
   m_ObjectHideFlags: 0
@@ -1546,7 +1615,7 @@ MonoBehaviour:
   useLocationServices: 1
   demoLocation: 2
   updateDistance: 0.1
-  simulateMotion: 2
+  simulateMotion: 0
   useWsadInEditor: 1
   motionMode: 1
   avatar: {fileID: 0}
@@ -1833,7 +1902,8 @@ MonoBehaviour:
   GreenMat: {fileID: 2100000, guid: e6cef2a4b4306a44e99c14b7fc448c14, type: 2}
   moveAvatar: {fileID: 1379913658}
   user: {fileID: 0}
-  npc: {fileID: 0}
+  npc: {fileID: 2047707624, guid: 138165ede056b58428c4f34647fc9c80, type: 3}
+  tagUser: {fileID: 0}
 --- !u!114 &1386072699
 MonoBehaviour:
   m_ObjectHideFlags: 0
