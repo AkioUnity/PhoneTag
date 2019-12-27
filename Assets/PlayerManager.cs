@@ -14,11 +14,12 @@ public class PlayerManager : MonoBehaviour
     public Player npc;
     public Player tagUser;
     
-    public static float tagDistance = 10;
-    public static float WaitTime = 5f;
+    public static float tagDistance = 15;
+    public static float WaitTime = 0.5f;
+    public static int spawnCount = 7;
     public static bool isGameStarted = false;
     public static float Scale = 1.9f;
-    public static float MaxDistance = 20*Scale;
+    public static float MaxDistance = 50*Scale;
     
     private void Awake()
     {
@@ -35,6 +36,7 @@ public class PlayerManager : MonoBehaviour
         if (!GameManager.Inst.isMultiMode)
         {
             tagUser = user;
+            user.isMe = true;
             tagUser.SetTag(true);
             StartCoroutine(SpawnNPC());
         }
@@ -43,10 +45,15 @@ public class PlayerManager : MonoBehaviour
     IEnumerator SpawnNPC()
     {
         yield return new WaitForSeconds(2);
-        npc = Instantiate(npc);
-        npc.isNpc = true;
-        npc.SetTag(false);
-        npc.transform.position = RandomCircle(user.transform.position);
+        int npcCount = Random.Range(spawnCount, spawnCount+8);
+        for (int i = 0; i < npcCount; i++)
+        {
+            npc = Instantiate(npc);
+            npc.isNpc = true;
+            npc.SetTag(false);
+            npc.transform.position = RandomCircle();    
+        }
+        
         isGameStarted = true;
     }
 
@@ -55,9 +62,10 @@ public class PlayerManager : MonoBehaviour
         return (isRed)?RedMat:GreenMat;
     }
     
-    Vector3 RandomCircle ( Vector3 center)
+    public  Vector3 RandomCircle ()
     {
-        float radius = (tagDistance+2)*Scale;
+        Vector3 center = user.transform.position;
+        float radius = (tagDistance+Random.Range(5.0f,25.0f))*Scale;
         float ang = Random.value * 360;
         Vector3 pos;
         pos.x = center.x + radius * Mathf.Sin(ang * Mathf.Deg2Rad);

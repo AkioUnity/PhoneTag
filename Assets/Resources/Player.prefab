@@ -336,6 +336,7 @@ MonoBehaviour:
   - {fileID: 3742329159417768690}
   isRed: 0
   isNpc: 0
+  isMe: 0
   npcSpeed: 3
 --- !u!199 &3542904924055034672
 ParticleSystemRenderer:

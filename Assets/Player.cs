@@ -8,7 +8,9 @@ public class Player : MonoBehaviour
     public Renderer[] parts;
     public bool isRed;
     public bool isNpc;
+    public bool isMe;
     public float npcSpeed = 0.5f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -25,12 +27,13 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (!PlayerManager.isGameStarted)
-            return;
         if (isNpc)
         {
             NPCMove();   
         }
+        
+        if (!PlayerManager.isGameStarted)
+            return;
 
         if (!isRed)
         {
@@ -42,8 +45,7 @@ public class Player : MonoBehaviour
     {
         float dist = Vector3.Distance(PlayerManager.Inst.user.transform.position, transform.position);
         if (dist > PlayerManager.MaxDistance && !isRed)
-            return;
-
+            transform.position = PlayerManager.Inst.RandomCircle();
         Vector3 targetDir;
         if (isRed)
             targetDir = PlayerManager.Inst.user.transform.position - transform.position;
@@ -57,5 +59,12 @@ public class Player : MonoBehaviour
     {
         isRed = flag;
         ChangeColor();
+        if (isMe)
+        {
+            if (isRed)
+                UIManager.Inst.areIt.OpenCloseObjectAnimation();
+            else
+                UIManager.Inst.avoidRed.OpenCloseObjectAnimation();
+        }
     }
 }
